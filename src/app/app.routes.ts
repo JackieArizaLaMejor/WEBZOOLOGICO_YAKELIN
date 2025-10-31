@@ -3,6 +3,8 @@ import { Animalcomponent } from './components/animalcomponent/animalcomponent';
 
 export const routes: Routes = [
     {
-        path: "animal", component: Animalcomponent
+     path: 'inicio', component: Animalcomponent 
+
     }
 ];
+

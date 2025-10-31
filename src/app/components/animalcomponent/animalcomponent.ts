@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { AnimalService } from '../../service/animal-service';
 
 @Component({
   selector: 'app-animalcomponent',
@@ -9,5 +10,17 @@ import { FormsModule } from '@angular/forms';
   
 })
 export class Animalcomponent {
-  Titulo="Yakelin Ariza ";
+    animalList:any= [];
+  constructor(private animalService:AnimalService) {}
+  
+  getAllAnimals() {
+      this.animalService.getAllAnimalsData().subscribe((data: {}) => {
+      this.animalList=data;
+    });
+  }
+  ngOnInit() {
+    this.getAllAnimals();
+  }
+
+
 }
