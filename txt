@@ -1,0 +1,1 @@
+MONGODB_URI= mongodb+srv://YakelinAriza:4zBxvv7um65BKIWu@cluster01.kpfavrt.mongodb.net/?appName=Cluster01
